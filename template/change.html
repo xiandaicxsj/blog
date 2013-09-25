@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content1 %}
+	
+<form action="/change/"  method="post">
+<input type="text" name="title" value={{post.title}}>
+<br></br>
+<br></br>
+<textarea clos="50" rows="6" name="text">
+{{post.text}}
+
+</textarea>
+<input type="subit" value="send",size="5">
+
+</form>
+{% endblock %}
+
+
+
+

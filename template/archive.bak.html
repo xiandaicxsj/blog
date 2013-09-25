@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block content1 %}
+{% for post in posts %}
+	<h2> <a href="{%url blog_show post.id %}">{{post.title}}</a></h2>
+	<p>  {{post.text}} </p>
+	<h3> <a href="{%url blog_ch post.id %}">change</a></h3>
+{% endfor %}
+{% endblock %}
