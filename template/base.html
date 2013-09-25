@@ -1,10 +1,29 @@
-D<!DOCTYPE html>
+<!DOCTYPE html>
   <head>
     <title>Twitter Bootstrap Tutorial - A responsive layout tutorial</title>
     <style type='text/css'>
       body {
         background-color: #CCC;
       }
+	.featuredbox {
+height: 224px;
+background: #ffffff;
+border: solid 1px #cbcbcb;
+-webkit-border-radius: 2px;
+-moz-border-radius: 2px;
+border-radius: 2px;
+-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) ;
+-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); 
+box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) ;
+padding: 2px 2px 5px 2px;
+}
+	.hot {
+	text-align: center;
+	margin-top: 20px;
+	line-height: 5px;
+	font-size: 14px;
+}
+
     </style>
 <link rel="stylesheet" href= "/static/css/bootstrap.css">
 	<link rel="stylesheet" href="/static/css/bootstrap.min.css">
@@ -15,11 +34,9 @@ D<!DOCTYPE html>
 	{% endblock %}
   </head>
   <body>
+	
 	{% block content1 %}
 	
 	{% endblock %}
-	
-
-	
   </body>
 </html>
